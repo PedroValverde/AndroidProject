@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0D4F1"
+    android:orientation="vertical"
+    tools:context=".TelaDeCadastro">
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="15dp"
+      app:srcCompat="@drawable/logo" />
+
+  <TextView
+      android:id="@+id/textView9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="15dp"
+      android:text="Cadastro De Usuario"
+      android:textAlignment="center"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textNomeCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:layout_marginBottom="14sp"
+        android:ems="10"
+        android:hint="Digite Seu Nome:"
+        android:inputType="textPersonName"
+        android:maxLength="40"
+        android:minHeight="48dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/textMatriculaCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:layout_marginBottom="14sp"
+        android:ems="10"
+        android:hint="Digite o Numero da Sua Matricula"
+        android:inputType="number"
+        android:maxLength="6"
+        android:minHeight="48dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#000000"
+        />
+
+    <EditText
+        android:id="@+id/textSenhaCad"
+        android:layout_width="421dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:ems="10"
+        android:hint="Escolha uma senha de até 8 digitos"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:minHeight="48dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/textEmailCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:ems="10"
+        android:hint="Digite seu E-mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:minHeight="48dp"
+        android:textColor="#FF000000"
+        android:textColorHint="#000000"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:text="Selecione o seu cargo:"
+        android:textColor="#FF000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/radioGestor"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10sp"
+          android:text="Gestor de Tecnologia"
+          android:textColor="#FF000000"
+          />
+
+      <RadioButton
+          android:id="@+id/radioEstagio"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10sp"
+          android:text="Estagiario de Tecnologia"
+          android:textColor="#FF000000"
+          />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/btnCadastrar"
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="20sp"
+          android:layout_weight="1"
+          android:text="Cadastrar" />
+
+      <Button
+          android:id="@+id/btnVoltar"
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="20sp"
+          android:layout_weight="1"
+          android:text="Voltar" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.controle">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Controle de Estoque Interno"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Controle">
+        <activity
+            android:name=".TelaCadastroDeEmprestimo"
+            android:exported="false" />
+        <activity
+            android:name=".TelaCadastroDeProduto"
+            android:exported="false" />
+        <activity
+            android:name=".telaEmprestimo.TelaEmprestimo"
+            android:exported="false" />
+        <activity
+            android:name=".telaEstoque.TelaEstoque"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDeCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".TelaDeOpcoes"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical"
+    tools:context=".TelaDeOpcoes">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Pedro Luis"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Matrircula: 0000001"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textCargo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Estagiário de Tecnologia"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEstoque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="Acesse o Estoque" />
+
+        <Button
+            android:id="@+id/btnEmprestimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="Acesse os Emprestimo" />
+
+        <Button
+            android:id="@+id/btnAdcProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:text="Cadastrar Produto no Estoque" />
+
+        <Button
+            android:id="@+id/btnLogoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logout" />
+
+
+    </LinearLayout>
+</LinearLayout>
